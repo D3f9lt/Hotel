@@ -1,0 +1,25 @@
+﻿<Window x:Class="Hotel.View.Windows.AdministratorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel.View.Windows"
+        mc:Ignorable="d"
+        Title="Окно администратора" Height="720" Width="1200">
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="UserBtn" Content="Пользователь" Click="UserBtn_Click"/>
+            <Separator Width="20" Height="0"/>
+            <Button x:Name="RoomBtn" Content="Команата" Click="RoomBtn_Click"/>
+        </StackPanel>
+
+        <Frame Name="MainFrame" Grid.Row="2" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

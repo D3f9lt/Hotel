@@ -1,0 +1,36 @@
+﻿<Window x:Class="Hotel.View.Windows.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel.View.Windows"
+        mc:Ignorable="d"
+        Title="Окно входа" SizeToContent="WidthAndHeight" MinHeight="300" MinWidth="400" ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Логин:" />
+        
+        <TextBlock Grid.Row="2" Text="Пароль:"/>
+        
+        <TextBox Name="LoginTb" Grid.Column="2"/>
+        
+        <PasswordBox Name="PasswordPb" Grid.Row="2" Grid.Column="2"/>
+        
+        <Button Name="EntryBtn" Grid.Row="4" Grid.Column="2" Content="Войти" 
+                Click="EntryBtn_Click" IsDefault="True"/>
+    </Grid>
+</Window>
