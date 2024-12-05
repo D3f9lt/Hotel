@@ -72,7 +72,7 @@
                 
                 <!-- IsReadOnly - поле только для чтения -->
                 <!-- IsHitTestVisible - нельзя нажать на элемент -->
-                <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Fullname}"/>
+                <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding FullName}"/>
                 <TextBox Grid.Row="4" Grid.Column="2" IsReadOnly="True" Text="{Binding Login}"/>
                 <TextBox Grid.Row="6" Grid.Column="2" Text="{Binding Password}"/>
                 <DatePicker Grid.Row="8" Grid.Column="2" IsHitTestVisible="False" SelectedDate="{Binding RegistrationDate}"/>

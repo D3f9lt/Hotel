@@ -22,14 +22,12 @@ namespace Hotel.View.Windows
     {
         public ChangePasswordWindow()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent(); 
         }
 
         private void ChangePasswordBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ChangePassword();
         }
 
         void ChangePassword()
@@ -44,9 +42,9 @@ namespace Hotel.View.Windows
             }
             else if (NewPasswordPb.Password != AcceptNewPasswordPb.Password)
             {
-                Feedback.Error("Неверно введён текущий пароль! Попробуйте снова.");
+                Feedback.Error("Новые пароли не совпадают! Попробуйте снова.");
             }
-            else if (OldPasswordPb.Password != NewPasswordPb.Password)
+            else if (OldPasswordPb.Password == NewPasswordPb.Password)
             {
                 Feedback.Error("Старый или новый пароль совпадают! Придумайте новый пароль.");
             }
